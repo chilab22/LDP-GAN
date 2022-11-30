@@ -13,7 +13,7 @@ description
 
 # Module
 -------------------------------------------
-
+<mark>형광펜</mark>
 * <mark>train.py</mark> train the GAN models
 
 * <span style="background-color:#D3D3D3">Utility/build_DWS.py</span> Build Dimension Wise Statistics(DWS) model. 
