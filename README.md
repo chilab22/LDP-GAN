@@ -89,13 +89,10 @@ python3 train.py --epochs 200000 --lr 0.0001 --epsilons 1.0 3.0 5.0 7.0 9.0 11.0
 ```shell
 
 python3 Utility/build_DWS.py
-
-
 ```
 ```shell
 
 python3 Utility/build_DWA.py
-
 
 ```
 ```shell
@@ -108,7 +105,6 @@ python3 Utility/build_DWP.py
 ```shell
 
 python3 Utility/build_Corr.py
-
 
 ```
 
@@ -148,13 +144,11 @@ python3 Utility/build_DWA.py --data train_data.csv --GPU 1 --epochs 200000
 
 python3 Utility/build_DWP.py --train train_data.csv --ho ho_data.csv --GPU 1 --epochs 200000 
 
-
 ```
 
 ```shell
 
 python3 Utility/build_Corr.py --data train_data.csv --GPU 1 --epochs 200000 
-
 
 ```
 
@@ -166,12 +160,10 @@ python3 Utility/build_Corr.py --data train_data.csv --GPU 1 --epochs 200000
 
 python3 Utility/display_DWS.py
 
-
 ```
 ```shell
 
 python3 Utility/display_DWA.py
-
 
 ```
 ```shell
@@ -184,7 +176,6 @@ python3 Utility/display_DWP.py
 ```shell
 
 python3 Utility/display_Corr.py
-
 
 ```
 
@@ -207,25 +198,21 @@ There are two types of selectable models, "LDP" and "DP". (text , default = ['LD
 
 python3 Utility/display_DWS.py --fig_size 3 
 
-
 ```
 ```shell
 
 python3 Utility/display_DWA.py --fig_size 3
-
 
 ```
 ```shell
 
 python3 Utility/display_DWP.py --fig_size 3 
 
-
 ```
 
 ```shell
 
 python3 Utility/display_Corr.py --data ho_data.csv --cmap "BuPu"
-
 
 ```
 
@@ -259,13 +246,11 @@ python3 Privacy/build_PBA.py
 
 python3 Privacy/build_WGA.py
 
-
 ```
 
 ```shell
 
 python3 Privacy/build_WDA.py 
-
 
 ```
 
@@ -294,7 +279,6 @@ python3 Privacy/build_WDA.py
 
 python3 Privacy/build_FBA.py --n_syn 1000 --attack_on ho_data.csv
 
-
 ```
 ```shell
 
@@ -305,13 +289,11 @@ python3 Privacy/build_PBA.py --max_iterations 300 --n_target 1000
 
 python3 Privacy/build_WGA.py --max_iterations 300 --n_target 1000
 
-
 ```
 
 ```shell
 
 python3 Privacy/build_WDA.py  --max_iterations 300 --n_target 1000 --threshold=400
-
 
 ```
 
@@ -337,7 +319,6 @@ python3 Privacy/build_WGA.py
 ```shell
 
 python3 Privacy/build_WDA.py 
-
 
 ```
 
@@ -380,7 +361,6 @@ python3 Privacy/build_WGA.py --color_DP '#01b8aa'  --color_LDP '#fd625e' --fig_s
 
 python3 Privacy/build_WDA.py --color_DP '#01b8aa'  --color_LDP '#fd625e' --fig_size 3.0
 
-
 ```
 
 #### Perform all utility experiments
@@ -389,7 +369,6 @@ You can adjust the options by editing the "Utility/run_privacy.sh" file.
 ```shell
 
 sh Utility/run_privacy.sh
-
 
 ```
 
@@ -400,7 +379,6 @@ sh Utility/run_privacy.sh
 ```shell
 
 python3 trade-off/trade-off.py 
-
 
 ```
 
@@ -430,6 +408,5 @@ There are two types of selectable models, "LDP" and "DP". (text , default = ['LD
 ```shell
 
 python3 trade-off/trade-off.py  --fig_size --utility_models DWS DWA DWP --privacy_models FBA PBA WGA
-
 
 ```
