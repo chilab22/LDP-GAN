@@ -13,7 +13,7 @@ description
 
 # Module
 -------------------------------------------
-==글자파란색==
+==글 ```자파란``` 색==
 <mark>형광펜</mark>
 <span style="color:red">빨간</span>
 
