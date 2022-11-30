@@ -17,25 +17,25 @@ description
 
 * ```train.py``` train the GAN models
 
-* <span style="background-color:#D3D3D3">Utility/build_DWS.py</span> Build Dimension Wise Statistics(DWS) model. 
+* ```Utility/build_DWS.py``` Build Dimension Wise Statistics(DWS) model. 
 In this module, the DWS scores and distances of each GAN model are calculated.
 
-* <span style="background-color:#D3D3D3">Utility/build_DWA.py</span> Build Dimension Wise Average(DWA) model. In this module, the DWA scores and distances of each GAN model are calculated.
+* ```Utility/build_DWA.py``` Build Dimension Wise Average(DWA) model. In this module, the DWA scores and distances of each GAN model are calculated.
 
-* <span style="background-color:#D3D3D3">Utility/build_DWP.py</span> Build Dimension Wise Prediction(DWP) model. 
+* ```Utility/build_DWP.py``` Build Dimension Wise Prediction(DWP) model. 
 In this module, the DWP scores and distances of each GAN model are calculated.
 
-* <span style="background-color:#D3D3D3">Utility/build_Corr.py</span> Build Correlation model. In this module, the Correlation scores and distances of each GAN model are calculated.
+* ```Utility/build_Corr.py``` Build Correlation model. In this module, the Correlation scores and distances of each GAN model are calculated.
 
 
 
-* <span style="background-color:#D3D3D3">Privacy/build_FBA.py</span> Build Full Black-box Attack(FBA) model. In this module, FBA for each model is performed.
+* ```Privacy/build_FBA.py``` Build Full Black-box Attack(FBA) model. In this module, FBA for each model is performed.
 
-* <span style="background-color:#D3D3D3">Privacy/build_PBA.py</span> Build Partial Black-box Attack(PBA) model. In this module, PBA for each model is performed.
+* ```Privacy/build_PBA.py``` Build Partial Black-box Attack(PBA) model. In this module, PBA for each model is performed.
 
-* <span style="background-color:#D3D3D3">Privacy/build_WGA.py</span> Build White-box Attack(WGA) model. In this module, WGA for each model is performed.
+* ```Privacy/build_WGA.py``` Build White-box Attack(WGA) model. In this module, WGA for each model is performed.
 
-* <span style="background-color:#D3D3D3">Privacy/build_WDA.py</span> Build Whitebox-Discriminator Attack WDA model. In this module, WDA for each model is performed.
+* ```Privacy/build_WDA.py``` Build Whitebox-Discriminator Attack WDA model. In this module, WDA for each model is performed.
 
 # Usage
 -------------------------------------------
@@ -50,28 +50,28 @@ python3 train.py
 
 #### options
 
-* <span style="background-color:#0000FF">--epochs</span> : Number of training epochs(int, defaul = 100000)
+* <span style="background-color:#0000FF">--epochs``` : Number of training epochs(int, defaul = 100000)
 
-* <span style="background-color:#D3D3D3">--GPU</span> : Index of the GPU to use (int, default = 0)
+* ```--GPU``` : Index of the GPU to use (int, default = 0)
 
-* <span style="background-color:#D3D3D3">--epsilons</span> : Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
+* ```--epsilons``` : Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
 
-* <span style="background-color:#D3D3D3">--Models</span> Kind of model to train. 
+* ```--Models``` Kind of model to train. 
 There are two types of selectable models, "LDP" and "DP". (text , default = ['LDP', 'DP'])
 
-* <span style="background-color:#D3D3D3">--lr</span> Learning rate(float, default = 0.00005)
+* ```--lr``` Learning rate(float, default = 0.00005)
 
-* <span style="background-color:#D3D3D3">--latent_dim</span> Dimension of latent vector (int, default = 100)
+* ```--latent_dim``` Dimension of latent vector (int, default = 100)
 
-* <span style="background-color:#D3D3D3">--n_critics</span> : Training epochs of Critics per Generator training epoch (int, defalut = 5)
+* ```--n_critics``` : Training epochs of Critics per Generator training epoch (int, defalut = 5)
 
-* <span style="background-color:#D3D3D3">--lambd</span> : Lambda of Wasserstain-loss (int, default = 10)
+* ```--lambd``` : Lambda of Wasserstain-loss (int, default = 10)
 
-* <span style="background-color:#D3D3D3">--log_step</span> : The training status is displayed at every log step. (int, default = 5000)
+* ```--log_step``` : The training status is displayed at every log step. (int, default = 5000)
 
-* <span style="background-color:#D3D3D3">--decay</span> : Proportion of the learning rate that will change at each log step (float, default = 0.995)
+* ```--decay``` : Proportion of the learning rate that will change at each log step (float, default = 0.995)
 
-* <span style="background-color:#D3D3D3">--data</span> : The name of the data to use for training file(csv).The data should be in the "/data" directory. (text, default = "train_data.csv)
+* ```--data``` : The name of the data to use for training file(csv).The data should be in the "/data" directory. (text, default = "train_data.csv)
 
 ####  optional usage
 
@@ -110,22 +110,22 @@ python3 Utility/build_Corr.py
 
 #### options
 
-* <span style="background-color:#D3D3D3">--data</span> Name of real data file(csv). This option is not used for "build_DWP.py". The data should be in the "/data" directory  (text, defaul = "train_data.csv")
+* ```--data``` Name of real data file(csv). This option is not used for "build_DWP.py". The data should be in the "/data" directory  (text, defaul = "train_data.csv")
 
-* <span style="background-color:#D3D3D3">--latent_dim</span> Dimension of latent vector (int, default = 100)
+* ```--latent_dim``` Dimension of latent vector (int, default = 100)
 
-* <span style="background-color:#D3D3D3">--GPU</span> Index of the GPU to use (int, default = 0)
+* ```--GPU``` Index of the GPU to use (int, default = 0)
 
-* <span style="background-color:#D3D3D3">--epochs</span> Number of training epochs(int, defaul = 100000)
+* ```--epochs``` Number of training epochs(int, defaul = 100000)
 
-* <span style="background-color:#D3D3D3">--epsilons</span> Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
+* ```--epsilons``` Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
 
-* <span style="background-color:#D3D3D3">--Models</span> Kind of model to train. 
+* ```--Models``` Kind of model to train. 
 There are two types of selectable models, "LDP" and "DP". (text , default = ['LDP', 'DP'])
 
-* <span style="background-color:#D3D3D3">--train</span> Name of train data file(csv). This options is only for "build_DWP.py" (text , default = 'train_data.csv')
+* ```--train``` Name of train data file(csv). This options is only for "build_DWP.py" (text , default = 'train_data.csv')
 
-* <span style="background-color:#D3D3D3">--ho</span>  Name of train data file(csv). This option is only for "build_DWP.py" (text , default = 'ho_data.csv')
+* ```--ho```  Name of train data file(csv). This option is only for "build_DWP.py" (text , default = 'ho_data.csv')
 
 #### optional usage
 ```shell
@@ -180,16 +180,16 @@ python3 Utility/display_Corr.py
 
 #### options 
 
-* <span style="background-color:#D3D3D3">--epsilons</span> Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
+* ```--epsilons``` Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
 
-* <span style="background-color:#D3D3D3">--Models</span> Kind of model to train. 
+* ```--Models``` Kind of model to train. 
 There are two types of selectable models, "LDP" and "DP". (text , default = ['LDP', 'DP'])
 
-* <span style="background-color:#D3D3D3">--fig_size</span> size of figures  (float, default = 5.0)
+* ```--fig_size``` size of figures  (float, default = 5.0)
 
-* <span style="background-color:#D3D3D3">--cmap</span> Color of correlation matrix. This option is only for "display_Corr.py" (text, default = "GnBu")
+* ```--cmap``` Color of correlation matrix. This option is only for "display_Corr.py" (text, default = "GnBu")
 
-* <span style="background-color:#D3D3D3">--data</span> Name of real data file(csv). This option is only for "display_corr.py". The data should be in the "/data" directory  (text, defaul = "train_data.csv")
+* ```--data``` Name of real data file(csv). This option is only for "display_corr.py". The data should be in the "/data" directory  (text, defaul = "train_data.csv")
 
 #### optional usage
 
@@ -253,22 +253,22 @@ python3 Privacy/build_WDA.py
 
 #### options
 
-* <span style="background-color:#D3D3D3">--GPU</span> Index of the GPU to use (int, default = 0)
+* ```--GPU``` Index of the GPU to use (int, default = 0)
 
-* <span style="background-color:#D3D3D3">--epsilons</span> Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
+* ```--epsilons``` Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
 
-* <span style="background-color:#D3D3D3">--Models</span> Kind of model to train. There are two types of selectable models, "LDP" and "DP". (text , default = ['LDP', 'DP'])
-* <span style="background-color:#D3D3D3">--latent_dim</span> Dimension of latent vector.Must match the model's latent_dim. (int, default = 100)
+* ```--Models``` Kind of model to train. There are two types of selectable models, "LDP" and "DP". (text , default = ['LDP', 'DP'])
+* ```--latent_dim``` Dimension of latent vector.Must match the model's latent_dim. (int, default = 100)
 
-* <span style="background-color:#D3D3D3">--threshold</span> the boundary of the distance. If the distance is less than the threshold, it is assumed that the target data is used for the train. (float, default = 0.05/0.025/0.005/300)
+* ```--threshold``` the boundary of the distance. If the distance is less than the threshold, it is assumed that the target data is used for the train. (float, default = 0.05/0.025/0.005/300)
 
-* <span style="background-color:#D3D3D3">--n_target</span> The number of targets to infer. (int, default = 600)
+* ```--n_target``` The number of targets to infer. (int, default = 600)
 
-* <span style="background-color:#D3D3D3">--attack_on</span> File name of the data to be attacked(csv).The data should be in the "/data" directory.  (text, default = "train_data.csv")
+* ```--attack_on``` File name of the data to be attacked(csv).The data should be in the "/data" directory.  (text, default = "train_data.csv")
 
-* <span style="background-color:#D3D3D3">--n_syn</span> The number of data FBA generates for attacks. This option is only for "build_FBA.py" (int, default = 500)
+* ```--n_syn``` The number of data FBA generates for attacks. This option is only for "build_FBA.py" (int, default = 500)
 
-* <span style="background-color:#D3D3D3">--max_iterations</span> max_iterations of nelder_mead/l-bfgs algorithms. This option is only for "build_PBA.py" and "build_WGA.py".(text, default = 500)
+* ```--max_iterations``` max_iterations of nelder_mead/l-bfgs algorithms. This option is only for "build_PBA.py" and "build_WGA.py".(text, default = 500)
 
 #### optional usage
 
@@ -321,20 +321,20 @@ python3 Privacy/build_WDA.py
 
 #### options 
 
-* <span style="background-color:#D3D3D3">--epsilons</span> Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
+* ```--epsilons``` Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
 
-* <span style="background-color:#D3D3D3">--Models</span> Kind of model to train. 
+* ```--Models``` Kind of model to train. 
 There are two types of selectable models, "LDP" and "DP". (text , default = ['LDP', 'DP']')
 
-* <span style="background-color:#D3D3D3">--fig_size</span> size of figures  (float, default = 5.0)
+* ```--fig_size``` size of figures  (float, default = 5.0)
 
-* <span style="background-color:#D3D3D3">--facecolor</span> Base color of figure. (text, default = '#eaeaf2')
+* ```--facecolor``` Base color of figure. (text, default = '#eaeaf2')
 
-* <span style="background-color:#D3D3D3">--color_DP</span> Color of DP chart. (text, default = "#fd625e")
+* ```--color_DP``` Color of DP chart. (text, default = "#fd625e")
 
-* <span style="background-color:#D3D3D3">--color_LDP</span> Color of LDP chart. (text, default = "#01b8aa")
+* ```--color_LDP``` Color of LDP chart. (text, default = "#01b8aa")
 
-* <span style="background-color:#D3D3D3">--GPU</span> Color of LDP chart. (int, default = 0)
+* ```--GPU``` Color of LDP chart. (int, default = 0)
 
 
 #### optional usage
@@ -381,24 +381,24 @@ python3 trade-off/trade-off.py
 
 #### options
 
-* <span style="background-color:#D3D3D3">--epsilons</span> Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
+* ```--epsilons``` Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
 
-* <span style="background-color:#D3D3D3">--Models</span> Kind of model to train. 
+* ```--Models``` Kind of model to train. 
 There are two types of selectable models, "LDP" and "DP". (text , default = ['LDP', 'DP'])
 
-* <span style="background-color:#D3D3D3">--fig_size</span> size of figures  (float, default = 5.0)
+* ```--fig_size``` size of figures  (float, default = 5.0)
 
-* <span style="background-color:#D3D3D3">--facecolor</span> Base color of figure. (text, default = '#eaeaf2')
+* ```--facecolor``` Base color of figure. (text, default = '#eaeaf2')
 
-* <span style="background-color:#D3D3D3">--color_DP</span> Color of DP chart. (text, default = "#fd625e")
+* ```--color_DP``` Color of DP chart. (text, default = "#fd625e")
 
-* <span style="background-color:#D3D3D3">--color_LDP</span> Color of LDP chart. (text, default = "#01b8aa")
+* ```--color_LDP``` Color of LDP chart. (text, default = "#01b8aa")
 
-* <span style="background-color:#D3D3D3">--GPU</span> Color of LDP chart. (int, default = 0)
+* ```--GPU``` Color of LDP chart. (int, default = 0)
 
-* <span style="background-color:#D3D3D3">--utility_models</span> Utility metrics to display trade-off.(text, default = ['DWS','DWA','DWP','Corr'])
+* ```--utility_models``` Utility metrics to display trade-off.(text, default = ['DWS','DWA','DWP','Corr'])
 
-* <span style="background-color:#D3D3D3">--attack_models</span> Attack metrics to display trade-off (text,  default = ['FBA','PBA','WGA','WDA'])  
+* ```--attack_models``` Attack metrics to display trade-off (text,  default = ['FBA','PBA','WGA','WDA'])  
 
 #### optional usage
 
