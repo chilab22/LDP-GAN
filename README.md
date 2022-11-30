@@ -50,7 +50,7 @@ python3 train.py
 
 #### options
 
-* <span style="background-color:#0000FF">--epochs``` : Number of training epochs(int, defaul = 100000)
+* ```--epochs``` : Number of training epochs(int, defaul = 100000)
 
 * ```--GPU``` : Index of the GPU to use (int, default = 0)
 
