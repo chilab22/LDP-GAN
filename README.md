@@ -169,7 +169,6 @@ python3 Utility/display_DWA.py
 
 python3 Utility/display_DWP.py
 
-
 ```
 
 ```shell
@@ -222,7 +221,6 @@ You can adjust the options by editing the "Utility/run_utility.sh" file.
 
 sh Utility/run_utility.sh
 
-
 ```
 
 
@@ -233,7 +231,6 @@ sh Utility/run_utility.sh
 ```shell
 
 python3 Privacy/build_FBA.py 
-
 
 ```
 ```shell
