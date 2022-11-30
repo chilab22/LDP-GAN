@@ -14,7 +14,7 @@ description
 # Module
 -------------------------------------------
 
-* <span style="background-color:#D3D3D3">train.py</span> train the GAN models
+* <mark>train.py</mark> train the GAN models
 
 * <span style="background-color:#D3D3D3">Utility/build_DWS.py</span> Build Dimension Wise Statistics(DWS) model. 
 In this module, the DWS scores and distances of each GAN model are calculated.
