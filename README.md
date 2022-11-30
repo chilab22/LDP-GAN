@@ -49,11 +49,11 @@ python3 train.py
 
 #### options
 
-* <span style="background-color:#D3D3D3">--epochs</span> Number of training epochs(int, defaul = 100000)
+* <span style="background-color:#D3D3D3">--epochs</span> : Number of training epochs(int, defaul = 100000)
 
-* <span style="background-color:#D3D3D3">--GPU</span> Index of the GPU to use (int, default = 0)
+* <span style="background-color:#D3D3D3">--GPU</span> : Index of the GPU to use (int, default = 0)
 
-* <span style="background-color:#D3D3D3">--epsilons</span> Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
+* <span style="background-color:#D3D3D3">--epsilons</span> : Epsilons to use (float, default = [0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10, 20])
 
 * <span style="background-color:#D3D3D3">--Models</span> Kind of model to train. 
 There are two types of selectable models, "LDP" and "DP". (text , default = ['LDP', 'DP'])
@@ -62,21 +62,20 @@ There are two types of selectable models, "LDP" and "DP". (text , default = ['LD
 
 * <span style="background-color:#D3D3D3">--latent_dim</span> Dimension of latent vector (int, default = 100)
 
-* <span style="background-color:#D3D3D3">--n_critics</span> Training epochs of Critics per Generator training epoch (int, defalut = 5)
+* <span style="background-color:#D3D3D3">--n_critics</span> : Training epochs of Critics per Generator training epoch (int, defalut = 5)
 
-* <span style="background-color:#D3D3D3">--lambd</span> Lambda of Wasserstain-loss (int, default = 10)
+* <span style="background-color:#D3D3D3">--lambd</span> : Lambda of Wasserstain-loss (int, default = 10)
 
-* <span style="background-color:#D3D3D3">--log_step</span> The training status is displayed at every log step. (int, default = 5000)
+* <span style="background-color:#D3D3D3">--log_step</span> : The training status is displayed at every log step. (int, default = 5000)
 
-* <span style="background-color:#D3D3D3">--decay</span> Proportion of the learning rate that will change at each log step (float, default = 0.995)
+* <span style="background-color:#D3D3D3">--decay</span> : Proportion of the learning rate that will change at each log step (float, default = 0.995)
 
-* <span style="background-color:#D3D3D3">--data</span> The name of the data to use for training file(csv).The data should be in the "/data" directory. (text, default = "train_data.csv)
+* <span style="background-color:#D3D3D3">--data</span> : The name of the data to use for training file(csv).The data should be in the "/data" directory. (text, default = "train_data.csv)
 
 ####  optional usage
 
 ```shell
 python3 train.py --epochs 200000 --lr 0.0001 --epsilons 1.0 3.0 5.0 7.0 9.0 11.0 13.0 15.0 --GPU 1 --data train_data2.csv
-
 ```
 
   
