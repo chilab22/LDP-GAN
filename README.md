@@ -13,7 +13,7 @@ description
 
 # Module
 -------------------------------------------
-<span style="color:blue">글자파란색</span>
+==글자파란색==
 * <mark>train.py</mark> train the GAN models
 
 * <span style="background-color:#D3D3D3">Utility/build_DWS.py</span> Build Dimension Wise Statistics(DWS) model. 
